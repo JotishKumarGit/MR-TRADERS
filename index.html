@@ -214,7 +214,7 @@
     <nav class="navbar navbar-expand-lg navbar-light custom-navbar sticky-top shadow-sm">
         <div class="container">
             <!-- Brand -->
-            <a class="navbar-brand fw-bold text-white" href="index.php">
+            <a class="navbar-brand fw-bold text-white" href="index.html">
                 <i class="bi bi-droplet-fill me-2"></i> MR TRADERS
             </a>
 
@@ -228,12 +228,12 @@
             <!-- Menu -->
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav align-items-center">
-                    <li class="nav-item"><a class="nav-link active text-white" href="index.php">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="about.php">About</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="products.php">Products</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="services.php">Services</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="blog.php">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="contact.php">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active text-white" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
                     <li class="nav-item ms-3">
                         <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal"
                             class="btn btn-warning fw-semibold px-3 py-1">Enquiry</a>
@@ -250,7 +250,7 @@
             <h1>MR TRADERS</h1>
             <p>Experience the ultimate cleanliness with our premium detergent powder. Tough on stains, gentle on
                 clothes, and perfect for every home.</p>
-            <a href="#products" class="btn">Explore Products</a>
+            <a href="contact.html" class="btn">Explore Products</a>
         </div>
     </section>
 
@@ -282,7 +282,7 @@
                         <li><i class="bi bi-check-circle-fill text-warning me-2"></i> Long-lasting fragrance</li>
                         <li><i class="bi bi-check-circle-fill text-warning me-2"></i> Eco-friendly ingredients</li>
                     </ul>
-                    <a href="about.php" class="btn btn-warning mt-3 px-4 fw-semibold">Learn More</a>
+                    <a href="about.html" class="btn btn-warning mt-3 px-4 fw-semibold">Learn More</a>
                 </div>
 
                 <!-- Right Side: Image -->
@@ -307,7 +307,7 @@
                     <div class="card-body  text-center">
                         <h5 class="card-title">Detergent Powder</h5>
                         <p class="card-text">Effective cleaning power for bright, fresh clothes</p>
-                        <a href="Detergent_Powder.php" class="btn btn-light text-primary">Detalis</a>
+                        <a href="Detergent_Powder.html" class="btn btn-light text-primary">Detalis</a>
                     </div>
                 </div>
             </div>
@@ -533,7 +533,7 @@
                             <h5 class="card-title">5 Tips for Bright and Fresh Clothes</h5>
                             <p class="card-text">Learn how to get your laundry looking brand new with Mr Traders
                                 Detergent Powder in every wash.</p>
-                            <a href="contact.php" class="btn btn-primary">Read More</a>
+                            <a href="contact.html" class="btn btn-primary">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -545,7 +545,7 @@
                             <h5 class="card-title">Eco-Friendly Laundry Tips</h5>
                             <p class="card-text">Discover simple ways to reduce your environmental impact while keeping
                                 clothes clean and fresh using our detergent.</p>
-                            <a href="contact.php" class="btn btn-primary">Read More</a>
+                            <a href="contact.html" class="btn btn-primary">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -557,7 +557,7 @@
                             <h5 class="card-title">Ultimate Stain Removal Guide</h5>
                             <p class="card-text">Tough stains? Learn the best techniques to remove them quickly and
                                 safely with Mr Traders Detergent Powder.</p>
-                            <a href="contact.php" class="btn btn-primary">Read More</a>
+                            <a href="contact.html" class="btn btn-primary">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -610,6 +610,92 @@
         </div>
     </div>
 
+    <!-- Enquiry Form Modal -->
+    <div class="modal fade" id="enquiryModal" tabindex="-1" aria-labelledby="enquiryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content" style="background-color: #007bff; color: white;">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold" id="enquiryModalLabel">Enquiry Form</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="enquiryForm">
+                        <div class="row g-3">
+                            <!-- Name -->
+                            <div class="col-md-6">
+                                <label for="enqName" class="form-label">Name</label>
+                                <input type="text" class="form-control form-control-lg" id="enqName"
+                                    placeholder="Enter your name" required>
+                            </div>
+                            <!-- Email -->
+                            <div class="col-md-6">
+                                <label for="enqEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control form-control-lg" id="enqEmail"
+                                    placeholder="Enter your email" required>
+                            </div>
+                            <!-- Phone -->
+                            <div class="col-md-6">
+                                <label for="enqPhone" class="form-label">Phone</label>
+                                <input type="tel" class="form-control form-control-lg" id="enqPhone"
+                                    placeholder="Enter your phone" required>
+                            </div>
+                            <!-- Subject -->
+                            <div class="col-md-6">
+                                <label for="enqSubject" class="form-label">Subject</label>
+                                <input type="text" class="form-control form-control-lg" id="enqSubject"
+                                    placeholder="Subject of your enquiry" required>
+                            </div>
+                            <!-- Message -->
+                            <div class="col-12">
+                                <label for="enqMessage" class="form-label">Message</label>
+                                <textarea class="form-control form-control-lg" id="enqMessage" rows="4"
+                                    placeholder="Type your message here..." required></textarea>
+                            </div>
+                        </div>
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn btn-light btn-lg fw-bold w-50">Send via WhatsApp</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Redirect Script -->
+    <script>
+        document.getElementById('enquiryForm').addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent default form submission
+
+            const name = document.getElementById('enqName').value;
+            const email = document.getElementById('enqEmail').value;
+            const phone = document.getElementById('enqPhone').value;
+            const subject = document.getElementById('enqSubject').value;
+            const message = document.getElementById('enqMessage').value;
+
+            const whatsappNumber = '919870757009'; // Replace with your WhatsApp number
+            const whatsappMessage = `Enquiry from ${name}.\nEmail: ${email}\nPhone: ${phone}\nSubject: ${subject}\nMessage: ${message}`;
+            const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+            window.open(whatsappURL, '_blank');
+        });
+    </script>
+
+    <!-- Optional: Input focus style -->
+    <style>
+        .modal-content input:focus,
+        .modal-content textarea:focus {
+            border-color: #ffffff;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            background-color: rgba(255, 255, 255, 0.15);
+            color: white;
+        }
+
+        .form-label {
+            font-weight: 500;
+        }
+    </style>
+
     <!-- WhatsApp Redirect Script -->
     <script>
         document.getElementById('contactForm').addEventListener('submit', function (e) {
@@ -643,12 +729,12 @@
                 <div class="col-md-3">
                     <h5 class="fw-bold">Quick Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="index.php" class="text-white text-decoration-none">Home</a></li>
-                        <li><a href="products.php" class="text-white text-decoration-none">Products</a></li>
-                        <li><a href="services.php" class="text-white text-decoration-none">Services</a></li>
+                        <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="products.html" class="text-white text-decoration-none">Products</a></li>
+                        <li><a href="services.html" class="text-white text-decoration-none">Services</a></li>
                         <li><a href="#faq" class="text-white text-decoration-none">FAQ</a></li>
-                        <li><a href="blog.php" class="text-white text-decoration-none">Blogs</a></li>
-                        <li><a href="contact.php" class="text-white text-decoration-none">Contact</a></li>
+                        <li><a href="blog.html" class="text-white text-decoration-none">Blogs</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
                     </ul>
                 </div>
 
@@ -687,3 +773,4 @@
 </body>
 
 </html>
+
