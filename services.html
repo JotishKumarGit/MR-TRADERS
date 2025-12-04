@@ -100,141 +100,126 @@
             <!-- Breadcrumb Content -->
             <div class="text-center text-white animate__animated animate__fadeInDown"
                 style="position: relative; z-index: 1;">
-                <h1 class="fw-bold" style="font-size: 2.5rem;">Products</h1>
+                <h1 class="fw-bold" style="font-size: 2.5rem;">Services</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb justify-content-center mb-0" style="background: transparent;">
                         <li class="breadcrumb-item"><a href="#" class="text-white text-decoration-none">Home</a></li>
-                        <li class="breadcrumb-item active text-white" aria-current="page">Products</li>
+                        <li class="breadcrumb-item active text-white" aria-current="page">Services</li>
                     </ol>
                 </nav>
             </div>
         </div>
     </section>
 
-    <!-- products sections  -->
-    <div class="container-fluid products-section py-5">
+    <!-- SERVICES SLIDER SECTION -->
+    <div class="container-fluid services-slider-section py-5">
         <div class="container">
-            <h2 class="text-center mb-5 animate__animated animate__fadeInDown">Our Products</h2>
+            <!-- Section Header -->
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="badge bg-gradient-info text-white px-4 py-2 mb-3 rounded-pill">
+                    <i class="bi bi-star-fill me-2"></i>What We Offer
+                </span>
+                <h2 class="section-title fw-bold display-5 mb-3">
+                    Our Premium Services
+                </h2>
+                <p class="text-muted lead">Delivering excellence in detergent manufacturing and beyond</p>
+            </div>
 
-            <div class="row g-4 justify-content-center">
-                <!-- Product 1 -->
-                <div class="col-md-4">
-                    <div class="card product-card animate__animated animate__zoomIn">
-                        <img src="assets/img/detergent_powder_new.jpg" class="card-img-top" alt="Product 1">
-                        <div class="card-body text-center">
-                            <h5 class="card-title text-dark">Detergent Powder</h5>
-                            <p class="card-text text-dark ">Effective cleaning power for bright, fresh clothes</p>
-                            <a href="Detergent_Powder.html" class="btn btn-light text-primary">Details</a>
+            <!-- Swiper Slider -->
+            <div class="swiper myServiceSwiper position-relative" data-aos="zoom-in">
+                <div class="swiper-wrapper pb-5">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="service-slide-card shadow-lg text-center h-100">
+                            <div class="icon-wrapper mb-4">
+                                <div class="icon-circle">
+                                    <i class="bi bi-droplet-half service-slide-icon"></i>
+                                </div>
+                            </div>
+                            <h4 class="fw-bold text-gradient mb-3">Detergent Manufacturing</h4>
+                            <p class="text-muted mb-4">High-quality detergent powder crafted with advanced formula for
+                                superior cleaning performance.</p>
+                            <div class="service-features">
+                                <span class="feature-badge"><i class="bi bi-check-circle-fill me-1"></i>ISO
+                                    Certified</span>
+                                <span class="feature-badge"><i
+                                        class="bi bi-check-circle-fill me-1"></i>Eco-Friendly</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="service-slide-card shadow-lg text-center h-100">
+                            <div class="icon-wrapper mb-4">
+                                <div class="icon-circle icon-circle-secondary">
+                                    <i class="bi bi-box-seam service-slide-icon service-slide-icon-secondary"></i>
+                                </div>
+                            </div>
+                            <h4 class="fw-bold text-gradient mb-3">Bulk Supply</h4>
+                            <p class="text-muted mb-4">Reliable wholesale & retail supply across India with competitive
+                                pricing and timely delivery.</p>
+                            <div class="service-features">
+                                <span class="feature-badge"><i class="bi bi-check-circle-fill me-1"></i>Pan India</span>
+                                <span class="feature-badge"><i class="bi bi-check-circle-fill me-1"></i>Best
+                                    Rates</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="service-slide-card shadow-lg text-center h-100">
+                            <div class="icon-wrapper mb-4">
+                                <div class="icon-circle icon-circle-accent">
+                                    <i class="bi bi-cart-check service-slide-icon service-slide-icon-accent"></i>
+                                </div>
+                            </div>
+                            <h4 class="fw-bold text-gradient mb-3">Private Labeling</h4>
+                            <p class="text-muted mb-4">Launch your own brand with our comprehensive OEM service and
+                                custom packaging solutions.</p>
+                            <div class="service-features">
+                                <span class="feature-badge"><i class="bi bi-check-circle-fill me-1"></i>Custom
+                                    Design</span>
+                                <span class="feature-badge"><i class="bi bi-check-circle-fill me-1"></i>Low MOQ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <div class="service-slide-card shadow-lg text-center h-100">
+                            <div class="icon-wrapper mb-4">
+                                <div class="icon-circle icon-circle-success">
+                                    <i class="bi bi-truck service-slide-icon service-slide-icon-success"></i>
+                                </div>
+                            </div>
+                            <h4 class="fw-bold text-gradient mb-3">Nationwide Delivery</h4>
+                            <p class="text-muted mb-4">Fast & secured delivery with premium packaging to ensure product
+                                safety and quality.</p>
+                            <div class="service-features">
+                                <span class="feature-badge"><i class="bi bi-check-circle-fill me-1"></i>Safe
+                                    Transit</span>
+                                <span class="feature-badge"><i class="bi bi-check-circle-fill me-1"></i>Track
+                                    Order</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
+                <!-- Navigation -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev">
+                    <i class="bi bi-chevron-left"></i>
+                </div>
+                <div class="swiper-button-next">
+                    <i class="bi bi-chevron-right"></i>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- WHY CHOOSE US SECTION -->
-    <div class="container-fluid why-choose-section py-5">
-        <div class="container">
-
-            <h2 class="text-center text-white mb-5 section-title" data-aos="fade-up" data-aos-duration="900">
-                Why Choose Us
-            </h2>
-
-            <div class="row g-4">
-
-                <!-- Card 1 -->
-                <div class="col-md-4" data-aos="zoom-in" data-aos-duration="900">
-                    <div class="choose-card shadow-lg p-4 text-center rounded-4">
-                        <div class="choose-icon mb-3">
-                            <i class="bi bi-stars"></i>
-                        </div>
-                        <h4 class="fw-bold text-primary">Premium Quality</h4>
-                        <p class="choose-text">
-                            Our detergent powder is crafted with advanced technology to ensure deep cleaning,
-                            bright colors, and long-lasting fragrance.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1100">
-                    <div class="choose-card shadow-lg p-4 text-center rounded-4">
-                        <div class="choose-icon mb-3">
-                            <i class="bi bi-shield-check"></i>
-                        </div>
-                        <h4 class="fw-bold text-primary">Trusted & Safe</h4>
-                        <p class="choose-text">
-                            Skin-friendly, fabric-safe, and eco-conscious ingredients keep your family and the
-                            environment protected.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1300">
-                    <div class="choose-card shadow-lg p-4 text-center rounded-4">
-                        <div class="choose-icon mb-3">
-                            <i class="bi bi-gear-wide-connected"></i>
-                        </div>
-                        <h4 class="fw-bold text-primary">Advanced Technology</h4>
-                        <p class="choose-text">
-                            Powered by modern formulation techniques that remove even the toughest stains with
-                            ease and efficiency.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="row g-4 mt-3">
-
-                <!-- Card 4 -->
-                <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1500">
-                    <div class="choose-card shadow-lg p-4 text-center rounded-4">
-                        <div class="choose-icon mb-3">
-                            <i class="bi bi-globe2"></i>
-                        </div>
-                        <h4 class="fw-bold text-primary">Growing Brand</h4>
-                        <p class="choose-text">
-                            MR TRADERS is expanding rapidly with customer trust, quality assurance, and
-                            innovative products and more.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1700">
-                    <div class="choose-card shadow-lg p-4 text-center rounded-4">
-                        <div class="choose-icon mb-3">
-                            <i class="bi bi-emoji-smile-fill"></i>
-                        </div>
-                        <h4 class="fw-bold text-primary">Customer Satisfaction</h4>
-                        <p class="choose-text">
-                            Thousands of customers trust us for reliable cleaning performance and consistent
-                            product quality.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Card 6 -->
-                <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1900">
-                    <div class="choose-card shadow-lg p-4 text-center rounded-4">
-                        <div class="choose-icon mb-3">
-                            <i class="bi bi-recycle"></i>
-                        </div>
-                        <h4 class="fw-bold text-primary">Eco-Friendly</h4>
-                        <p class="choose-text">
-                            Our formula ensures powerful cleaning while reducing impact on nature with
-                            biodegradable components.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
+    <!-- footer -->
 
     <!-- Enquiry Form Modal -->
     <div class="modal fade" id="enquiryModal" tabindex="-1" aria-labelledby="enquiryModalLabel" aria-hidden="true">
@@ -322,18 +307,27 @@
         }
     </style>
 
-    <!-- WhatsApp Redirect Script -->
+    <!-- slider of services -->
+
+
+
+    <!-- WHATSAPP SCRIPT -->
     <script>
         document.getElementById('contactForm').addEventListener('submit', function (e) {
-            e.preventDefault(); // Prevent default form submission
+            e.preventDefault();
 
-            const name = document.getElementById('name').value;
-            const phone = document.getElementById('phone').value;
-            const message = document.getElementById('message').value;
+            // Get values correctly
+            const name = document.getElementById('name').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const message = document.getElementById('message').value.trim();
 
-            const whatsappNumber = '919870757009'; // Replace with your WhatsApp number
+            const whatsappNumber = "919870757009"; // Your WhatsApp number
 
-            const whatsappMessage = `Hello! My name is ${name}. Phone: ${phone}. Message: ${message}`;
+            // Build WhatsApp message
+            const whatsappMessage =
+                `Hello! My name is ${name}.\nPhone: ${phone}\nMessage: ${message}`;
+
+            // Redirect to WhatsApp
             const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
             window.open(whatsappURL, '_blank');
         });
