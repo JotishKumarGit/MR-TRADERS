@@ -13,177 +13,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <!-- Animate.css for animations -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
-    <style>
-        body {
-            background-color: #007bff;
-            /* Blue background */
-            color: white;
-            /* White text for brand color */
-        }
-
-        .product-card {
-            background-color: rgba(255, 255, 255, 0.1);
-            /* Slightly transparent white */
-            border: none;
-            border-radius: 15px;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .product-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-        }
-
-        .product-card img {
-            border-radius: 15px 15px 0 0;
-        }
-
-        .product-card h5,
-        .product-card p {
-            color: white;
-        }
-
-        .service-card {
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 15px;
-            padding: 30px 20px;
-            text-align: center;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-        }
-
-        .service-card i {
-            font-size: 50px;
-            margin-bottom: 20px;
-            color: white;
-        }
-
-        .service-card h5 {
-            margin-bottom: 15px;
-            color: white;
-        }
-
-        .service-card p {
-            color: white;
-            font-size: 0.95rem;
-        }
-
-
-        .faq-section {
-            padding: 60px 20px;
-        }
-
-        .accordion-button {
-            background-color: rgba(255, 255, 255, 0.1);
-            color: #000;
-            font-weight: 500;
-        }
-
-        .accordion-button:focus {
-            box-shadow: none;
-        }
-
-        .accordion-button:not(.collapsed) {
-            background-color: rgba(123, 133, 165, 0.808);
-            color: rgb(53, 51, 51);
-        }
-
-        .accordion-body {
-            background-color: rgba(255, 255, 255, 0.05);
-            color: rgb(0, 0, 0);
-        }
-
-        .accordion-item {
-            border: none;
-            margin-bottom: 10px;
-        }
-
-        .faq-title {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 2rem;
-        }
-
-        #contactForm button:hover {
-            transform: scale(1.05);
-            background-color: white;
-            color: #007bff;
-        }
-
-        #contactForm input:focus,
-        #contactForm textarea:focus {
-            border-color: #ffffff;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-            background-color: rgba(255, 255, 255, 0.15);
-            color: white;
-        }
-
-        .form-label {
-            font-weight: 500;
-        }
-
-        .hero {
-            position: relative;
-            height: 100vh;
-            background: url('./assets/img/baner_back.webp') no-repeat center center/cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            text-align: center;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 72, 255, 0.5);
-            /* Blue overlay */
-        }
-
-        .hero-content {
-            position: relative;
-            max-width: 800px;
-            z-index: 2;
-        }
-
-        .hero h1 {
-            font-size: 4em;
-            margin: 0 0 20px;
-            color: #00f0ff;
-        }
-
-        .hero p {
-            font-size: 1.5em;
-            line-height: 1.6;
-            margin-bottom: 30px;
-            color: #e0f7ff;
-        }
-
-        .hero .btn {
-            display: inline-block;
-            padding: 15px 40px;
-            font-size: 1.2em;
-            color: #fff;
-            background-color: #0048ff;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s;
-        }
-
-        .hero .btn:hover {
-            background-color: #0033cc;
-        }
-    </style>
+    <!-- AOS Library -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 
 </head>
 
@@ -213,33 +44,33 @@
     <!-- ===== Navbar Start ===== -->
     <nav class="navbar navbar-expand-lg navbar-light custom-navbar sticky-top shadow-sm">
         <div class="container">
-            <!-- Brand -->
-            <a class="navbar-brand fw-bold text-white" href="index.html">
+
+            <a class="navbar-brand fw-bold" href="index.html">
                 <i class="bi bi-droplet-fill me-2"></i> MR TRADERS
             </a>
 
-            <!-- Toggler -->
-            <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- Menu -->
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav align-items-center">
-                    <li class="nav-item"><a class="nav-link active text-white" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="products.html">Products</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="blog.html">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
                     <li class="nav-item ms-3">
                         <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal"
                             class="btn btn-warning fw-semibold px-3 py-1">Enquiry</a>
                     </li>
+
                 </ul>
             </div>
+
         </div>
     </nav>
     <!-- ===== Navbar End ===== -->
@@ -254,361 +85,504 @@
         </div>
     </section>
 
-    <!-- ===== About Section Start ===== -->
-    <div class="container-fluid about-section py-5" style="background-color: rgb(0, 224, 224);">
+    <!-- ABOUT SECTION -->
+    <div class="container-fluid about-section py-5">
         <div class="container">
             <div class="row align-items-center">
 
                 <!-- Left Side: Content -->
-                <div class="col-md-6 mb-4 mb-md-0">
+                <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right" data-aos-duration="1000">
                     <h2 class="section-title mb-3">About Us</h2>
                     <h3 class="fw-bold text-primary mb-3">Welcome to MR TRADERS</h3>
+
                     <p class="about-text">
-                        At <strong>MR TRADERS</strong>, we are dedicated to bringing a new level of freshness and
-                        cleanliness
-                        to your daily life. Our premium <strong>detergent powder</strong> is specially formulated to
-                        remove
-                        tough stains, protect fabric color, and leave your clothes smelling fresh all day long.
+                        At <strong>MR TRADERS</strong>, we are dedicated to bringing a new level of freshness,
+                        fragrance, and cleanliness to your daily life. Our high-quality
+                        <strong>detergent powder</strong> removes tough stains, protects fabric color,
+                        and keeps clothes fresh all day long.
                     </p>
+
                     <p class="about-text">
-                        With years of experience and a commitment to quality, we blend advanced cleaning technology
-                        with eco-friendly ingredients — ensuring your laundry is not only clean but also safe for your
-                        family
-                        and the environment.
+                        With years of experience, we combine advanced cleaning technology with eco-friendly
+                        ingredients — ensuring your laundry stays safe for your family and the environment.
                     </p>
+
                     <ul class="list-unstyled about-list mt-3">
-                        <li><i class="bi bi-check-circle-fill text-warning me-2"></i> Powerful stain removal</li>
-                        <li><i class="bi bi-check-circle-fill text-warning me-2"></i> Gentle on clothes & skin</li>
-                        <li><i class="bi bi-check-circle-fill text-warning me-2"></i> Long-lasting fragrance</li>
-                        <li><i class="bi bi-check-circle-fill text-warning me-2"></i> Eco-friendly ingredients</li>
+                        <li><i class="bi bi-check-circle-fill text-info me-2"></i> Powerful stain removal</li>
+                        <li><i class="bi bi-check-circle-fill text-info me-2"></i> Gentle on clothes & skin</li>
+                        <li><i class="bi bi-check-circle-fill text-info me-2"></i> Long-lasting fragrance</li>
+                        <li><i class="bi bi-check-circle-fill text-info me-2"></i> Eco-friendly ingredients</li>
                     </ul>
-                    <a href="about.html" class="btn btn-warning mt-3 px-4 fw-semibold">Learn More</a>
+
+                    <a href="about.html" class="btn btn-info mt-3 px-4 fw-semibold text-white">Learn More</a>
                 </div>
 
-                <!-- Right Side: Image -->
-                <div class="col-md-6 text-center">
+                <!-- Right Side: Image Section (TWO IMAGES STYLE) -->
+                <div class="col-md-6 position-relative image-wrapper">
+
+                    <!-- Main Image -->
                     <img src="assets/img/Detergent_Powder.jpg" alt="Detergent Powder"
-                        class="img-fluid rounded shadow about-img">
-                </div>
+                        class="img-fluid about-main-img shadow" data-aos="zoom-in" data-aos-duration="1000">
 
+                    <!-- Small Floating Image -->
+                    <img src="assets/img/detergent_powder_new.jpg" alt="Small Product" class="about-small-img shadow"
+                        data-aos="fade-up" data-aos-duration="1200">
+                </div>
             </div>
         </div>
     </div>
     <!-- ===== About Section End ===== -->
 
-    <!-- products sections  -->
-    <div class="container py-5">
-        <h2 class="text-center mb-5 animate__animated animate__fadeInDown">Our Products</h2>
-        <div class="row g-4 justify-content-center">
-            <!-- Product 1 -->
-            <div class="col-md-4">
-                <div class="card product-card animate__animated animate__zoomIn">
-                    <img src="assets/img/detergent_powder_new.jpg" class="card-img-top" alt="Product 1">
-                    <div class="card-body  text-center">
-                        <h5 class="card-title">Detergent Powder</h5>
-                        <p class="card-text">Effective cleaning power for bright, fresh clothes</p>
-                        <a href="Detergent_Powder.html" class="btn btn-light text-primary">Detalis</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- services sections  -->
-    <div class="container py-5">
-        <h2 class="text-center mb-5 animate__animated animate__fadeInDown">Our Services</h2>
-        <div class="row g-4">
-            <!-- Service 1 -->
-            <div class="col-md-4">
-                <div class="service-card animate__animated animate__fadeInUp">
-                    <i class="bi bi-basket-fill"></i>
-                    <h5>Stain Removal</h5>
-                    <p>Powerful detergent formula removes tough stains effortlessly.</p>
-                </div>
-            </div>
-            <!-- Service 2 -->
-            <div class="col-md-4">
-                <div class="service-card animate__animated animate__fadeInUp animate__delay-1s">
-                    <i class="bi bi-brush-fill"></i>
-                    <h5>Bright & Fresh</h5>
-                    <p>Keeps clothes bright and fresh after every wash.</p>
-                </div>
-            </div>
-            <!-- Service 3 -->
-            <div class="col-md-4">
-                <div class="service-card animate__animated animate__fadeInUp animate__delay-2s">
-                    <i class="bi bi-shield-fill-check"></i>
-                    <h5>Gentle on Fabric</h5>
-                    <p>Protects your fabric while giving it a deep clean.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- faq sections  -->
-    <div class="container faq-section">
-        <h2 class="faq-title animate__animated animate__fadeInDown">Frequently Asked Questions - Mr Traders</h2>
-
-        <div class="accordion animate__animated animate__fadeInUp" id="faqAccordion">
-
-            <!-- FAQ 1 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="faq1">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                        What is the main feature of Mr Traders Detergent Powder?
-                    </button>
-                </h2>
-                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="faq1"
-                    data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        It effectively removes tough stains while keeping clothes bright and fresh.
-                    </div>
-                </div>
-            </div>
-
-            <!-- FAQ 2 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="faq2">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                        Is Mr Traders Detergent Powder safe for all fabrics?
-                    </button>
-                </h2>
-                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2"
-                    data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        Yes, it is gentle on fabrics while giving a thorough clean.
-                    </div>
-                </div>
-            </div>
-
-            <!-- FAQ 3 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="faq3">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                        How do I use the detergent powder for best results?
-                    </button>
-                </h2>
-                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3"
-                    data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        Use the recommended amount per load, and wash with water at suitable temperature for the fabric
-                        type.
-                    </div>
-                </div>
-            </div>
-
-            <!-- FAQ 4 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="faq4">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                        Does it leave any residue on clothes?
-                    </button>
-                </h2>
-                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4"
-                    data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        No, Mr Traders Detergent Powder rinses completely, leaving no residue.
-                    </div>
-                </div>
-            </div>
-
-            <!-- FAQ 5 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="faq5">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                        Is this detergent suitable for hand wash?
-                    </button>
-                </h2>
-                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="faq5"
-                    data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        Yes, it works efficiently for both hand wash and machine wash.
-                    </div>
-                </div>
-            </div>
-
-            <!-- FAQ 6 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="faq6">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-                        Can it remove tough stains like grease and oil?
-                    </button>
-                </h2>
-                <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="faq6"
-                    data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        Absolutely, it is specially formulated to tackle tough stains effectively.
-                    </div>
-                </div>
-            </div>
-
-            <!-- FAQ 7 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="faq7">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
-                        Is Mr Traders Detergent Powder eco-friendly?
-                    </button>
-                </h2>
-                <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="faq7"
-                    data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        It is made with biodegradable ingredients that are safe for the environment.
-                    </div>
-                </div>
-            </div>
-
-            <!-- FAQ 8 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="faq8">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
-                        How should I store the detergent powder?
-                    </button>
-                </h2>
-                <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="faq8"
-                    data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        Store in a cool, dry place, away from moisture and direct sunlight.
-                    </div>
-                </div>
-            </div>
-
-            <!-- FAQ 9 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="faq9">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
-                        What sizes are available for purchase?
-                    </button>
-                </h2>
-                <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="faq9"
-                    data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        Mr Traders Detergent Powder comes in multiple sizes to suit different household needs.
-                    </div>
-                </div>
-            </div>
-
-            <!-- FAQ 10 -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="faq10">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
-                        How can I contact Mr Traders for further support?
-                    </button>
-                </h2>
-                <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="faq10"
-                    data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        You can reach out via our website contact form, email, or customer support phone number.
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- blogs  -->
-    <div class="container-fluid">
-        <div class="container py-5">
-            <div class="mb-4">
-                <h2 class="text-center text-white">Our Blogs</h2>
-                <p class="text-center text-white">Explore tips, insights, and updates about cleaning, home care, and how
-                    Mr Traders Detergent Powder can make your laundry easier and brighter.</p>
-            </div>
-            <div class="row g-4">
-                <!-- Blog 1 -->
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="assets/img/Detergent_Powder.jpg" class="card-img-top" alt="Detergent Powder Tips">
-                        <div class="card-body">
-                            <h5 class="card-title">5 Tips for Bright and Fresh Clothes</h5>
-                            <p class="card-text">Learn how to get your laundry looking brand new with Mr Traders
-                                Detergent Powder in every wash.</p>
-                            <a href="contact.html" class="btn btn-primary">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Blog 2 -->
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="assets/img/detergent_powder_new.jpg" class="card-img-top" alt="Eco-friendly Laundry">
-                        <div class="card-body">
-                            <h5 class="card-title">Eco-Friendly Laundry Tips</h5>
-                            <p class="card-text">Discover simple ways to reduce your environmental impact while keeping
-                                clothes clean and fresh using our detergent.</p>
-                            <a href="contact.html" class="btn btn-primary">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Blog 3 -->
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="assets/img/baner_2.jpg" class="card-img-top" alt="Stain Removal Guide">
-                        <div class="card-body">
-                            <h5 class="card-title">Ultimate Stain Removal Guide</h5>
-                            <p class="card-text">Tough stains? Learn the best techniques to remove them quickly and
-                                safely with Mr Traders Detergent Powder.</p>
-                            <a href="contact.html" class="btn btn-primary">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- contact us  -->
-    <div class="container-fluid py-5" style="background-color: #007bff; color: white;">
+    <!-- MISSION & VISION SECTION -->
+    <div class="container-fluid mission-vision-section py-5">
         <div class="container">
-            <h2 class="text-center mb-5 animate__animated animate__fadeInDown" style="font-weight: 700;">Contact Us</h2>
+
+            <h2 class="text-center mb-5 section-title" data-aos="fade-up">
+                Our Mission & Vision
+            </h2>
+
+            <div class="row g-4">
+
+                <!-- Mission -->
+                <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="mv-card shadow-lg p-4 rounded-4 h-100">
+                        <div class="mv-icon mb-3">
+                            <i class="bi bi-bullseye text-info"></i>
+                        </div>
+                        <h4 class="fw-bold text-primary mb-3">Our Mission</h4>
+                        <p class="mv-text">
+                            Our mission is to deliver premium-quality detergent products that ensure
+                            spotless cleaning, long-lasting freshness, and safety for both your clothing
+                            and the environment. We aim to blend innovation with eco-friendly solutions
+                            to build trust and satisfaction among our customers.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Vision -->
+                <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="mv-card shadow-lg p-4 rounded-4 h-100">
+                        <div class="mv-icon mb-3">
+                            <i class="bi bi-eye-fill text-info"></i>
+                        </div>
+                        <h4 class="fw-bold text-primary mb-3">Our Vision</h4>
+                        <p class="mv-text">
+                            Our vision is to become a leading household brand recognized for quality,
+                            innovation, and trust — not just in India, but across global markets. We aspire
+                            to make sustainable, high-performance cleaning solutions accessible to every family.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- WHY CHOOSE US SECTION -->
+    <div class="container-fluid why-choose-section py-5">
+        <div class="container">
+
+            <h2 class="text-center text-white mb-5 section-title" data-aos="fade-up" data-aos-duration="900">
+                Why Choose Us
+            </h2>
+
+            <div class="row g-4">
+
+                <!-- Card 1 -->
+                <div class="col-md-4" data-aos="zoom-in" data-aos-duration="900">
+                    <div class="choose-card shadow-lg p-4 text-center rounded-4">
+                        <div class="choose-icon mb-3">
+                            <i class="bi bi-stars"></i>
+                        </div>
+                        <h4 class="fw-bold text-primary">Premium Quality</h4>
+                        <p class="choose-text">
+                            Our detergent powder is crafted with advanced technology to ensure deep cleaning,
+                            bright colors, and long-lasting fragrance.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1100">
+                    <div class="choose-card shadow-lg p-4 text-center rounded-4">
+                        <div class="choose-icon mb-3">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <h4 class="fw-bold text-primary">Trusted & Safe</h4>
+                        <p class="choose-text">
+                            Skin-friendly, fabric-safe, and eco-conscious ingredients keep your family and the
+                            environment protected.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1300">
+                    <div class="choose-card shadow-lg p-4 text-center rounded-4">
+                        <div class="choose-icon mb-3">
+                            <i class="bi bi-gear-wide-connected"></i>
+                        </div>
+                        <h4 class="fw-bold text-primary">Advanced Technology</h4>
+                        <p class="choose-text">
+                            Powered by modern formulation techniques that remove even the toughest stains with
+                            ease and efficiency.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row g-4 mt-3">
+
+                <!-- Card 4 -->
+                <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="choose-card shadow-lg p-4 text-center rounded-4">
+                        <div class="choose-icon mb-3">
+                            <i class="bi bi-globe2"></i>
+                        </div>
+                        <h4 class="fw-bold text-primary">Growing Brand</h4>
+                        <p class="choose-text">
+                            MR TRADERS is expanding rapidly with customer trust, quality assurance, and
+                            innovative products and more.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1700">
+                    <div class="choose-card shadow-lg p-4 text-center rounded-4">
+                        <div class="choose-icon mb-3">
+                            <i class="bi bi-emoji-smile-fill"></i>
+                        </div>
+                        <h4 class="fw-bold text-primary">Customer Satisfaction</h4>
+                        <p class="choose-text">
+                            Thousands of customers trust us for reliable cleaning performance and consistent
+                            product quality.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1900">
+                    <div class="choose-card shadow-lg p-4 text-center rounded-4">
+                        <div class="choose-icon mb-3">
+                            <i class="bi bi-recycle"></i>
+                        </div>
+                        <h4 class="fw-bold text-primary">Eco-Friendly</h4>
+                        <p class="choose-text">
+                            Our formula ensures powerful cleaning while reducing impact on nature with
+                            biodegradable components.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- products sections  -->
+    <div class="container-fluid products-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 animate__animated animate__fadeInDown">Our Products</h2>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Product 1 -->
+                <div class="col-md-4">
+                    <div class="card product-card animate__animated animate__zoomIn">
+                        <img src="assets/img/detergent_powder_new.jpg" class="card-img-top" alt="Product 1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-dark">Detergent Powder</h5>
+                            <p class="card-text text-dark">Effective cleaning power for bright, fresh clothes</p>
+                            <a href="Detergent_Powder.html" class="btn btn-light text-primary">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- SERVICES SLIDER SECTION -->
+    <div class="container-fluid services-slider-section py-5">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="badge bg-gradient-info text-white px-4 py-2 mb-3 rounded-pill">
+                    <i class="bi bi-star-fill me-2"></i>What We Offer
+                </span>
+                <h2 class="section-title fw-bold display-5 mb-3">
+                    Our Premium Services
+                </h2>
+                <p class="text-muted lead">Delivering excellence in detergent manufacturing and beyond</p>
+            </div>
+
+            <!-- Swiper Slider -->
+            <div class="swiper myServiceSwiper position-relative" data-aos="zoom-in">
+                <div class="swiper-wrapper pb-5">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="service-slide-card shadow-lg text-center h-100">
+                            <div class="icon-wrapper mb-4">
+                                <div class="icon-circle">
+                                    <i class="bi bi-droplet-half service-slide-icon"></i>
+                                </div>
+                            </div>
+                            <h4 class="fw-bold text-gradient mb-3">Detergent Manufacturing</h4>
+                            <p class="text-muted mb-4">High-quality detergent powder crafted with advanced formula for
+                                superior cleaning performance.</p>
+                            <div class="service-features">
+                                <span class="feature-badge"><i class="bi bi-check-circle-fill me-1"></i>ISO
+                                    Certified</span>
+                                <span class="feature-badge"><i
+                                        class="bi bi-check-circle-fill me-1"></i>Eco-Friendly</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="service-slide-card shadow-lg text-center h-100">
+                            <div class="icon-wrapper mb-4">
+                                <div class="icon-circle icon-circle-secondary">
+                                    <i class="bi bi-box-seam service-slide-icon service-slide-icon-secondary"></i>
+                                </div>
+                            </div>
+                            <h4 class="fw-bold text-gradient mb-3">Bulk Supply</h4>
+                            <p class="text-muted mb-4">Reliable wholesale & retail supply across India with competitive
+                                pricing and timely delivery.</p>
+                            <div class="service-features">
+                                <span class="feature-badge"><i class="bi bi-check-circle-fill me-1"></i>Pan India</span>
+                                <span class="feature-badge"><i class="bi bi-check-circle-fill me-1"></i>Best
+                                    Rates</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="service-slide-card shadow-lg text-center h-100">
+                            <div class="icon-wrapper mb-4">
+                                <div class="icon-circle icon-circle-accent">
+                                    <i class="bi bi-cart-check service-slide-icon service-slide-icon-accent"></i>
+                                </div>
+                            </div>
+                            <h4 class="fw-bold text-gradient mb-3">Private Labeling</h4>
+                            <p class="text-muted mb-4">Launch your own brand with our comprehensive OEM service and
+                                custom packaging solutions.</p>
+                            <div class="service-features">
+                                <span class="feature-badge"><i class="bi bi-check-circle-fill me-1"></i>Custom
+                                    Design</span>
+                                <span class="feature-badge"><i class="bi bi-check-circle-fill me-1"></i>Low MOQ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <div class="service-slide-card shadow-lg text-center h-100">
+                            <div class="icon-wrapper mb-4">
+                                <div class="icon-circle icon-circle-success">
+                                    <i class="bi bi-truck service-slide-icon service-slide-icon-success"></i>
+                                </div>
+                            </div>
+                            <h4 class="fw-bold text-gradient mb-3">Nationwide Delivery</h4>
+                            <p class="text-muted mb-4">Fast & secured delivery with premium packaging to ensure product
+                                safety and quality.</p>
+                            <div class="service-features">
+                                <span class="feature-badge"><i class="bi bi-check-circle-fill me-1"></i>Safe
+                                    Transit</span>
+                                <span class="feature-badge"><i class="bi bi-check-circle-fill me-1"></i>Track
+                                    Order</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev">
+                    <i class="bi bi-chevron-left"></i>
+                </div>
+                <div class="swiper-button-next">
+                    <i class="bi bi-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== Gallery Section Start ===== -->
+    <div class="container-fluid gallery-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 animate__animated animate__fadeInDown">Our Gallery</h2>
+
+            <div class="row g-4 justify-content-center align-items-center ">
+                <!-- Gallery Item 1 -->
+                <div class="col-sm-6 col-md-4 col-lg-3 gallery-item animate__animated animate__zoomIn">
+                    <div class="gallery-card">
+                        <img src="assets/img/baner_2.jpg" alt="Gallery 1">
+                        <div class="overlay">
+                            <a href="assets/img/baner_2.jpg" class="view-btn" target="_blank">
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="col-sm-6 col-md-4 col-lg-3 gallery-item animate__animated animate__zoomIn">
+                    <div class="gallery-card">
+                        <img src="assets/img/baner_3.jpg" alt="Gallery 2">
+                        <div class="overlay">
+                            <a href="assets/img/baner_3.jpg" class="view-btn" target="_blank">
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="col-sm-6 col-md-4 col-lg-3 gallery-item animate__animated animate__zoomIn">
+                    <div class="gallery-card">
+                        <img src="assets/img/Detergent_Powder.jpg" alt="Gallery 3">
+                        <div class="overlay">
+                            <a href="assets/img/Detergent_Powder.jpg" class="view-btn" target="_blank">
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="col-sm-6 col-md-4 col-lg-3 gallery-item animate__animated animate__zoomIn">
+                    <div class="gallery-card">
+                        <img src="assets/img/detergent_powder_new.jpg" alt="Gallery 4">
+                        <div class="overlay">
+                            <a href="assets/img/detergent_powder_new.jpg" class="view-btn" target="_blank">
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 5 -->
+                <div class="col-sm-6 col-md-4 col-lg-3 gallery-item animate__animated animate__zoomIn">
+                    <div class="gallery-card">
+                        <img src="assets/img/gallery_1.jpg" alt="Gallery 4">
+                        <div class="overlay">
+                            <a href="assets/img/dgallery_1.jpg" class="view-btn" target="_blank">
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+
+                <!-- Gallery Item 7 -->
+                <div class="col-sm-6 col-md-4 col-lg-3 gallery-item animate__animated animate__zoomIn">
+                    <div class="gallery-card">
+                        <img src="assets/img/gallery_3.jpg" alt="Gallery 4">
+                        <div class="overlay">
+                            <a href="assets/img/gallery_3.jpg" class="view-btn" target="_blank">
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 8 -->
+                <div class="col-sm-6 col-md-4 col-lg-3 gallery-item animate__animated animate__zoomIn">
+                    <div class="gallery-card">
+                        <img src="assets/img/gallery_4.webp" alt="Gallery 4">
+                        <div class="overlay">
+                            <a href="assets/img/dgallery_4.webp" class="view-btn" target="_blank">
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 9 -->
+                <div class="col-sm-6 col-md-4 col-lg-3 gallery-item animate__animated animate__zoomIn">
+                    <div class="gallery-card">
+                        <img src="assets/img/gallery_6.avif" alt="Gallery 4">
+                        <div class="overlay">
+                            <a href="assets/img/gallery_6.avif" class="view-btn" target="_blank">
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 10 -->
+                <div class="col-sm-6 col-md-4 col-lg-3 gallery-item animate__animated animate__zoomIn">
+                    <div class="gallery-card">
+                        <img src="assets/img/gallery_7.jpg" alt="Gallery 4">
+                        <div class="overlay">
+                            <a href="assets/img/gallery_7.jpg" class="view-btn" target="_blank">
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more gallery items similarly -->
+            </div>
+        </div>
+    </div>
+    <!-- ===== Gallery Section End ===== -->
+
+    <!-- CONTACT SECTION -->
+    <div class="container-fluid contact-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 animate__animated animate__fadeInDown" style="font-weight: 700;">
+                Contact Us
+            </h2>
+
             <div class="row g-4 align-items-center">
 
-                <!-- Left side: Map -->
+                <!-- Left Side: Map -->
                 <div class="col-md-6 animate__animated animate__fadeInLeft">
                     <div class="rounded shadow" style="overflow: hidden;">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d15079.893790928742!2d72.86998550031036!3d19.10882073909258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sGALA%20no.12%2F2%2CCTS%20no.116%20MJK%20compound%2CYadav%20nagar%2Ckhairani%20road%20sakinaka%20kurla%20MUMBAI%20MAHARASHTRA%20INDIA%20400072!5e0!3m2!1sen!2sin!4v1764406429573!5m2!1sen!2sin"
-                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
+                            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d30162.069505009364!2d72.85968561630493!3d19.096304109414746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sGALA%20no.12%2F2%2CCTS%20no.116%20MJK%20compound%2CYadav%20nagar%2Ckhairani%20road%20sakinaka%20kurla%20MUMBAI%20MAHARASHTRA%20INDIA%20400072!5e0!3m2!1sen!2sin!4v1764826511575!5m2!1sen!2sin"
+                            width="100%" height="450" style="border:0;" allowfullscreen loading="lazy">
                         </iframe>
                     </div>
                 </div>
 
-                <!-- Right side: Contact Form -->
+                <!-- Right Side: Form -->
                 <div class="col-md-6 animate__animated animate__fadeInRight">
-                    <form id="contactForm" class="p-4 rounded shadow"
-                        style="background-color: rgba(255, 255, 255, 0.1); backdrop-filter: blur(8px);">
+                    <form id="contactForm" class="p-4 rounded shadow contact-form">
+
                         <div class="mb-3">
-                            <label for="name" class="form-label">Your Name</label>
-                            <input type="text" class="form-control form-control-lg" id="name"
+                            <label class="form-label">Your Name</label>
+                            <input id="name" type="text" class="form-control form-control-lg"
                                 placeholder="Enter your name" required>
                         </div>
+
                         <div class="mb-3">
-                            <label for="phone" class="form-label">Phone Number</label>
-                            <input type="tel" class="form-control form-control-lg" id="phone"
+                            <label class="form-label">Phone Number</label>
+                            <input id="phone" type="tel" class="form-control form-control-lg"
                                 placeholder="Enter your phone number" required>
                         </div>
+
                         <div class="mb-3">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control form-control-lg" id="message" rows="5"
+                            <label class="form-label">Message</label>
+                            <textarea id="message" class="form-control form-control-lg" rows="5"
                                 placeholder="Type your message here..." required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-light btn-lg w-100 fw-bold"
-                            style="transition: all 0.3s;">Send via WhatsApp</button>
+
+                        <button type="submit" class="btn btn-info btn-lg w-100 fw-bold text-white whatsapp-btn">
+                            Send via WhatsApp
+                        </button>
+
                     </form>
                 </div>
 
             </div>
         </div>
     </div>
+
+    <!-- footer -->
 
     <!-- Enquiry Form Modal -->
     <div class="modal fade" id="enquiryModal" tabindex="-1" aria-labelledby="enquiryModalLabel" aria-hidden="true">
@@ -696,25 +670,34 @@
         }
     </style>
 
-    <!-- WhatsApp Redirect Script -->
+    <!-- slider of services -->
+
+
+
+    <!-- WHATSAPP SCRIPT -->
     <script>
         document.getElementById('contactForm').addEventListener('submit', function (e) {
-            e.preventDefault(); // Prevent default form submission
+            e.preventDefault();
 
-            const name = document.getElementById('name').value;
-            const phone = document.getElementById('phone').value;
-            const message = document.getElementById('message').value;
+            // Get values correctly
+            const name = document.getElementById('name').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const message = document.getElementById('message').value.trim();
 
-            const whatsappNumber = '919870757009'; // Replace with your WhatsApp number
+            const whatsappNumber = "919870757009"; // Your WhatsApp number
 
-            const whatsappMessage = `Hello! My name is ${name}. Phone: ${phone}. Message: ${message}`;
+            // Build WhatsApp message
+            const whatsappMessage =
+                `Hello! My name is ${name}.\nPhone: ${phone}\nMessage: ${message}`;
+
+            // Redirect to WhatsApp
             const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
             window.open(whatsappURL, '_blank');
         });
     </script>
 
     <!-- footer -->
-    <footer class="container-fluid" style="background-color: #0056b3; color: white;">
+    <footer class="container-fluid footer-section">
         <div class="container py-5">
             <div class="row g-4">
 
@@ -729,12 +712,12 @@
                 <div class="col-md-3">
                     <h5 class="fw-bold">Quick Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
-                        <li><a href="products.html" class="text-white text-decoration-none">Products</a></li>
-                        <li><a href="services.html" class="text-white text-decoration-none">Services</a></li>
-                        <li><a href="#faq" class="text-white text-decoration-none">FAQ</a></li>
-                        <li><a href="blog.html" class="text-white text-decoration-none">Blogs</a></li>
-                        <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="products.html" class="footer-link">Products</a></li>
+                        <li><a href="services.html" class="footer-link">Services</a></li>
+                        <li><a href="#faq" class="footer-link">FAQ</a></li>
+                        <li><a href="blog.html" class="footer-link">Blogs</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
                     </ul>
                 </div>
 
@@ -751,26 +734,30 @@
                 <div class="col-md-3">
                     <h5 class="fw-bold">Follow Us</h5>
                     <div class="d-flex gap-3">
-                        <a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="text-white fs-4"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="text-white fs-4"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="footer-social"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="footer-social"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="footer-social"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="footer-social"><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
 
             </div>
 
-            <hr style="border-color: rgba(255,255,255,0.2);">
+            <hr class="footer-hr">
 
             <div class="text-center pt-3">
-                <p class="mb-0">&copy; 2025 Mr Traders. All rights reserved.</p> Design By <span><a
-                        href="https://www.trade4export.com/" class="text-white">Trade4Export</a></span>
+                <p class="mb-0">&copy; 2025 Mr Traders. All rights reserved. Design By <a
+                        href="https://www.trade4export.com/" class="footer-link">Trade4Export</a></p>
             </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>
-
